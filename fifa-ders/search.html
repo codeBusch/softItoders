@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <script>
+        const inputChanged = ()=>{
+            let inputElement = document.getElementById('input');
+            let value = inputElement.value;
+            
+        }
+        const changeTitle = ()=>{
+            let titleText= document.title;
+           
+            let reversedTitle = titleText.split("").reverse().join("");
+            
+            document.title= reversedTitle
+        }
+        function handleInput() {
+    var inputValue = document.getElementById('myInput').value;
+    console.log("Input Değeri: " + inputValue);
+    // Diğer işlemleri gerçekleştirin
+}
+
+    </script>
+</head>
+<body>
+    <button onclick="changeTitle()">Change Title</button>
+    <form >
+        <input id="input" type="text" oninput="inputChanged()"/>
+    </form>
+    <input type="text" id="myInput" oninput="handleInput()">
+
+</body>
+</html>
